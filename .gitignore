@@ -1,1 +1,7 @@
-./__pycache__
+
+model/__pycache__/*
+routes/__pycache__/__init__.cpython-312.pyc
+routes/__pycache__/customer.cpython-312.pyc
+routes/__pycache__/recommend.cpython-312.pyc
+services/__pycache__/__init__.cpython-312.pyc
+services/__pycache__/customer_service.cpython-312.pyc
