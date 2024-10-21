@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Recommendations</title>
+</head>
+<body>
+    <h1>Recommended Products</h1>
+
+    <h2>Customer Data:</h2>
+    <ul>
+        {% for key, value in customer_data.items() %}
+        <li>{{ key }}: {{ value }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Recommendation:</h2>
+    <p>{{ recommendation }}</p>
+
+    <a href="/">Back to Input</a>
+</body>
+</html>

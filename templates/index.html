@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Customer Recommendation</title>
+</head>
+<body>
+    <h1>Customer Data Input</h1>
+    <form action="/recommend" method="POST">
+        <label for="age">Age:</label>
+        <input type="number" name="Age" id="age" required><br>
+
+        <label for="gender">Gender:</label>
+        <select name="Gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+
+        <label for="marital_status">Marital Status:</label>
+        <select name="Marital Status" id="marital_status">
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="Divorced">Divorced</option>
+            <option value="Widowed">Widowed</option>
+        </select><br>
+
+        <label for="income">Income Level:</label>
+        <select name="Income Level" id="income">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select><br>
+
+        <label for="education">Education:</label>
+        <select name="Education" id="education">
+            <option value="High School">High School</option>
+            <option value="College">College</option>
+            <option value="University">University</option>
+        </select><br>
+
+        <label for="occupation">Occupation:</label>
+        <input type="text" name="Occupation" id="occupation" required><br>
+
+        <label for="residential_status">Residential Status:</label>
+        <select name="Residential Status" id="residential_status">
+            <option value="Owns house">Owns house</option>
+            <option value="Rents">Rents</option>
+            <option value="Living with parents">Living with parents</option>
+        </select><br>
+
+        <label for="dependents">Dependents:</label>
+        <input type="number" name="Dependents" id="dependents" required><br>
+
+        <label for="debt_to_income">Debt-to-Income Ratio:</label>
+        <input type="number" step="0.01" name="Debt-to-Income" id="debt_to_income" required><br>
+
+        <label for="credit_bureau">Credit Bureau Score:</label>
+        <input type="number" name="Credit_Bureau" id="credit_bureau" required><br>
+
+        <input type="submit" value="Get Recommendations">
+    </form>
+</body>
+</html>

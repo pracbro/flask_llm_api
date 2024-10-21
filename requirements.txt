@@ -1,0 +1,9 @@
+Flask
+transformers
+langchain
+langchain-community
+pandas
+faker
+sentence-transformers
+chromadb
+torch
